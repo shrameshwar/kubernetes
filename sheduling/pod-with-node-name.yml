@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+  labels:
+    app: test
+spec:
+  nodeName: gke-my-practice-default-pool-80e70cb3-x6f5
+  containers:
+  - name: mycont
+    image: nginx
+
