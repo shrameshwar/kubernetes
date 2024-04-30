@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: mydbcon
+  name: mydbcon
+spec:
+  containers:
+  - envFrom:
+    - configMapRef:
+        name: shrameshwar
+    image: mysql
+    name: mydbcon
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {} 
+
