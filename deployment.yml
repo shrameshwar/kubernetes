@@ -18,7 +18,7 @@ spec:
         app: mayank
     spec:
       containers:
-      - image: shrame1999/testingnew:latest
+      - image: shrame1999/solotest:latest
         name: nginx
         resources:
           requests:
